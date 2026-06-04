@@ -19,6 +19,8 @@ huggingface-hub==0.33.4
 numpy==1.26.4
 pandas==2.2.2
 
-accelerate==0.34.2
+acccelerate==0.34.2
 safetensors==0.4.5
 tqdm==4.66.5
+
+reportlab==4.0.9
