@@ -1,3 +1,4 @@
+from transformers import pipeline
 from langchain_huggingface import HuggingFacePipeline
 
 def load_llm():
