@@ -1,9 +1,11 @@
-from langchain.memory import ConversationBufferWindowMemory
+from langchain_huggingface import HuggingFacePipeline
 
-
-def get_memory():
-
-    return ConversationBufferWindowMemory(
-        k=5,
-        return_messages=True
+def load_llm():
+    pipe = pipeline(
+        "text-generation",
+        model="TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        max_new_tokens=256,
+        temperature=0.7,
+        device=-1  # Force CPU usage
     )
+    return HuggingFacePipeline(pipeline=pipe)
