@@ -2,7 +2,7 @@
 
 A production-ready AI chatbot web application built with **Streamlit**, **LangChain**, and **OpenAI**. This project provides a clean, user-friendly interface for interacting with GPT-4o Mini, an advanced language model from OpenAI.
 
----
+---------
 
 ## ✨ Features
 
