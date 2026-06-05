@@ -1,5 +1,4 @@
 """Chatbot module for managing AI conversations.
-
 This module provides the main chatbot class that handles interactions
 with the OpenAI API through LangChain.
 """
