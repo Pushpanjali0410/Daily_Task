@@ -1,8 +1,3 @@
-"""Chatbot module for managing AI conversations.
-This module provides the main chatbot class that handles interactions
-with the OpenAI API through LangChain.
-"""
-
 import os
 from typing import Optional
 from langchain_openai import ChatOpenAI
