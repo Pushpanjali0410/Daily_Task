@@ -1,0 +1,17 @@
+# Core Dependencies
+streamlit==1.40.2
+langchain==0.3.16
+langchain-openai==0.2.13
+openai==1.58.1
+python-dotenv==1.0.1
+
+# Additional Dependencies for Enhanced Functionality
+langchain-community==0.3.16
+requests==2.32.3
+
+# Development Dependencies (optional)
+pytest==7.4.4
+pytest-cov==4.1.0
+black==24.1.1
+flake8==7.1.1
+mypy==1.8.0
