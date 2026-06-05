@@ -1,8 +1,3 @@
-"""Main Streamlit application for AI Chatbot.
-
-This module provides a web interface for interacting with an AI chatbot
-powered by OpenAI's GPT models through LangChain.
-"""
 
 import streamlit as st
 import sys
@@ -72,12 +67,6 @@ def display_chat_history():
 
 
 def handle_user_input(user_input: str, chatbot) -> None:
-    """Process user input and generate chatbot response.
-    
-    Args:
-        user_input: The user's message.
-        chatbot: The initialized chatbot object.
-    """
     if not user_input.strip():
         st.warning("⚠️ Please enter a message.")
         return
