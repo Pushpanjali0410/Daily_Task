@@ -1,4 +1,4 @@
-# Day 6 - Task 2: LLM-Powered Structured Data Extraction Agent
+# Day 6 - Task 2: LLM-Powered Structured Data Extraction Agents
 
 ## Objective
 Build an LLM-powered agent using LangChain that processes long unstructured text and extracts structured key-value information using Pydantic models.
