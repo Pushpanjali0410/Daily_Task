@@ -16,18 +16,6 @@ def export_chat_to_pdf(
     messages: List[Dict[str, str]],
     output_file: str | Path = "chats/chat_history.pdf"
 ) -> None:
-    """
-    Export chat messages to a PDF file.
-    
-    Args:
-        messages (List[Dict[str, str]]): List of message dictionaries with 'role' and 'content'.
-        output_file (str | Path): Path to save the PDF. Default is "chats/chat_history.pdf".
-    
-    Raises:
-        TypeError: If messages is not a list.
-        ValueError: If messages format is invalid.
-        IOError: If PDF export fails.
-    """
     if not isinstance(messages, list):
         raise TypeError(f"messages must be a list, got {type(messages).__name__}")
     
