@@ -1,3 +1,4 @@
+#Importing Numpy
 import numpy as np
 
 # AND gate dataset
