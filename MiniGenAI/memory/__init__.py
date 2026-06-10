@@ -1,4 +1,4 @@
-"""Memory package for MiniGenAI."""
+#Memory package for MiniGenAI.
 
 from .memory_manager import get_memory
 
