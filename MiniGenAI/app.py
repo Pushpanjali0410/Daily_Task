@@ -28,9 +28,7 @@ from utils.save_chat import save_chat, load_chat
 from utils.export_pdf import export_chat_to_pdf
 
 
-# ============================================================================
 # PAGE CONFIGURATION
-# ============================================================================
 
 st.set_page_config(
     page_title="MiniGenAI Assistant",
@@ -44,10 +42,7 @@ st.markdown(
     "An intelligent chatbot with PDF Q&A and conversation memory powered by LangChain and Hugging Face"
 )
 
-
-# ============================================================================
 # INITIALIZE SESSION STATE
-# ============================================================================
 
 if "llm" not in st.session_state:
     try:
@@ -92,11 +87,8 @@ if "vector_db" not in st.session_state:
 
 if "embeddings" not in st.session_state:
     st.session_state.embeddings = None
-
-
-# ============================================================================
+    
 # SIDEBAR - DOCUMENT UPLOAD
-# ============================================================================
 
 with st.sidebar:
     st.header("📄 Document Upload")
@@ -145,10 +137,7 @@ with st.sidebar:
     else:
         st.info("💬 **Chat Mode** - General conversation mode (no PDF loaded)")
 
-
-# ============================================================================
 # MAIN CHAT INTERFACE
-# ============================================================================
 
 # Display previous messages
 for msg in st.session_state.messages:
@@ -214,10 +203,7 @@ if prompt:
     except Exception as e:
         logger.error(f"Error saving chat: {e}")
 
-
-# ============================================================================
 # SIDEBAR - CONTROLS
-# ============================================================================
 
 with st.sidebar:
     st.markdown("---")
