@@ -10,12 +10,7 @@ from langchain_core.output_parsers import JsonOutputParser
 from pydantic_models import CustomerSupportData
 
 
-class StructuredExtractionAgent:
-    """
-    LangChain-based agent for extracting structured information from unstructured text.
-    Uses free Groq API for LLM operations.
-    """
-    
+class StructuredExtractionAgent:    
     def __init__(self):
         """Initialize the extraction agent with Groq LLM"""
         self.api_key = os.getenv("GROQ_API_KEY")
@@ -33,15 +28,6 @@ class StructuredExtractionAgent:
         self.parser = JsonOutputParser(pydantic_object=CustomerSupportData)
     
     def extract_information(self, unstructured_text: str) -> CustomerSupportData:
-        """
-        Extract structured information from unstructured text.
-        
-        Args:
-            unstructured_text (str): Long unstructured text containing customer information
-            
-        Returns:
-            CustomerSupportData: Validated structured data
-        """
         
         # Create extraction prompt
         extraction_prompt = PromptTemplate(
@@ -75,15 +61,6 @@ If any field is not found, use reasonable inference or mark as "Not Found".""",
         return validated_data
     
     def process_multiple_texts(self, texts: list) -> list:
-        """
-        Process multiple unstructured texts and extract information from each.
-        
-        Args:
-            texts (list): List of unstructured text strings
-            
-        Returns:
-            list: List of CustomerSupportData objects
-        """
         results = []
         for text in texts:
             try:
