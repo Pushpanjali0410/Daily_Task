@@ -13,20 +13,6 @@ def create_vector_store(
     documents: List[Document],
     embeddings: HuggingFaceEmbeddings
 ) -> FAISS:
-    """
-    Create a FAISS vector store from documents and embeddings.
-    
-    Args:
-        documents (List[Document]): List of documents to embed.
-        embeddings (HuggingFaceEmbeddings): Embeddings model to use.
-    
-    Returns:
-        FAISS: Vector store for document retrieval.
-    
-    Raises:
-        ValueError: If documents list is empty or embeddings is invalid.
-        RuntimeError: If vector store creation fails.
-    """
     if not documents:
         raise ValueError("Documents list cannot be empty")
     
