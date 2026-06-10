@@ -14,22 +14,7 @@ def load_llm(
     temperature: float = 0.7,
     device: int = -1
 ) -> HuggingFacePipeline:
-    """
-    Load and initialize a Hugging Face language model.
     
-    Args:
-        model_name (str): Name of the model to load. Default is TinyLlama.
-        max_tokens (int): Maximum number of tokens to generate. Default is 256.
-        temperature (float): Temperature for generation (0.0-1.0). Default is 0.7.
-        device (int): Device to use (-1 for CPU, 0+ for GPU). Default is -1.
-    
-    Returns:
-        HuggingFacePipeline: Initialized language model pipeline.
-    
-    Raises:
-        ValueError: If invalid parameters are provided.
-        RuntimeError: If model loading fails.
-    """
     # Validate parameters
     if not isinstance(model_name, str) or not model_name.strip():
         raise ValueError("model_name must be a non-empty string")
