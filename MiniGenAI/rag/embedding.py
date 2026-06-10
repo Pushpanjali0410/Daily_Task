@@ -10,20 +10,6 @@ logger = logging.getLogger(__name__)
 def get_embeddings(
     model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
 ) -> HuggingFaceEmbeddings:
-    """
-    Load and initialize embeddings model.
-    
-    Args:
-        model_name (str): Name of the embedding model. 
-                         Default is "sentence-transformers/all-MiniLM-L6-v2".
-    
-    Returns:
-        HuggingFaceEmbeddings: Initialized embeddings model.
-    
-    Raises:
-        ValueError: If model_name is invalid.
-        RuntimeError: If model loading fails.
-    """
     if not isinstance(model_name, str) or not model_name.strip():
         raise ValueError("model_name must be a non-empty string")
     
