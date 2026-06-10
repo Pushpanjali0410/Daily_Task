@@ -12,18 +12,6 @@ def save_chat(
     messages: List[Dict[str, str]],
     output_file: str | Path = "chats/history.json"
 ) -> None:
-    """
-    Save chat messages to a JSON file.
-    
-    Args:
-        messages (List[Dict[str, str]]): List of message dictionaries with 'role' and 'content'.
-        output_file (str | Path): Path to save the chat history. Default is "chats/history.json".
-    
-    Raises:
-        TypeError: If messages is not a list.
-        ValueError: If messages format is invalid.
-        IOError: If file write fails.
-    """
     if not isinstance(messages, list):
         raise TypeError(f"messages must be a list, got {type(messages).__name__}")
     
@@ -49,19 +37,6 @@ def save_chat(
 
 
 def load_chat(input_file: str | Path = "chats/history.json") -> List[Dict[str, str]]:
-    """
-    Load chat messages from a JSON file.
-    
-    Args:
-        input_file (str | Path): Path to load the chat history from.
-    
-    Returns:
-        List[Dict[str, str]]: List of message dictionaries.
-    
-    Raises:
-        FileNotFoundError: If the chat history file does not exist.
-        IOError: If file read fails.
-    """
     input_path = Path(input_file)
     
     if not input_path.exists():
