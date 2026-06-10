@@ -8,11 +8,9 @@ from sklearn.metrics import mean_squared_error, r2_score
 df = pd.read_csv(r"dataset\Ecommerce_Sales_Prediction_Dataset.csv")
 
 # 2. Preprocess Categorical Features (Convert text to numbers using One-Hot Encoding)
-# This handles "Product_Category" and "Customer_Segment" automatically
 df_encoded = pd.get_dummies(df, columns=["Product_Category", "Customer_Segment"], drop_first=True)
 
 # 3. Define Features (X) and Target (y)
-# We drop 'Units_Sold' (target) and 'Date' (linear regression cannot read raw date strings)
 X = df_encoded.drop(columns=["Units_Sold", "Date"])
 y = df_encoded["Units_Sold"]
 
