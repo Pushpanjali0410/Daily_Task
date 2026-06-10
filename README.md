@@ -29,8 +29,3 @@ This repository contains **15+ practical projects** across multiple domains:
 - 📊 **Total Projects:** 15+
 - ✅ **Status:** Actively Maintained
 
----
-
-## 📂 Project Structure
-
-Daily_Task/ │ ├── 🤖 AI & LLM Projects │ ├── Day6_Task2/ ⭐ NEW - LLM Data Extraction │ ├── LLM_Powered_Data_Extraction/ │ ├── AI_Chatbot/ │ └── MiniGenAI/ │ ├── 🧠 Machine Learning Projects │ ├── Iris_Classification/ (Iris Dataset Classification) │ ├── WineProject/ (Wine Quality Prediction) │ ├── Clickbait_Detector/ (Text Classification) │ └── Task_Manager/ (Task Automation) │ ├── 🔬 Neural Networks & Regression │ ├── perceptron.py (Single Layer Perceptron) │ ├── TwoLayerPerceptron.py (Multi-layer Perceptron) │ ├── binaryperceptron.py (Binary Classification) │ └── binarylogisticreg.py (Logistic Regression) │ ├── 📊 NLP & Text Processing │ ├── NLTK.ipynb (NLP Tutorial) │ └── Clickbait_Detector/ (Text Classification) │ ├── 🛠️ Utility Projects │ ├── FaceIdentification.py (Face Detection) │ ├── Task_Manager/ │ └── builtinmethod.py │ ├── 📝 Learning Scripts │ ├── day1.py (Day 1 Tasks) │ ├── day2.py (Day 2 Tasks) │ ├── day3.py (Day 3 Tasks) │ └── 📖 Documentation └── README.md (This file)
