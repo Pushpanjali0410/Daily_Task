@@ -1,4 +1,4 @@
-"""Configuration settings for MiniGenAI application."""
+## Configuration settings for MiniGenAI application.
 
 import os
 from pathlib import Path
