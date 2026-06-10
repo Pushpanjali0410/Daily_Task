@@ -10,20 +10,6 @@ logger = logging.getLogger(__name__)
 
 
 def load_pdf(pdf_path: str) -> List[Document]:
-    """
-    Load and extract documents from a PDF file.
-    
-    Args:
-        pdf_path (str): Path to the PDF file.
-    
-    Returns:
-        List[Document]: List of documents extracted from the PDF.
-    
-    Raises:
-        FileNotFoundError: If the PDF file does not exist.
-        ValueError: If the file is not a valid PDF.
-        RuntimeError: If PDF loading fails.
-    """
     # Validate path
     pdf_file = Path(pdf_path)
     
