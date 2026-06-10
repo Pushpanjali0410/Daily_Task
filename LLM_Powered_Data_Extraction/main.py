@@ -27,7 +27,6 @@ Rahul
 """
 
 def print_extraction_result(result: CustomerSupportData, test_name: str):
-    """Pretty print extraction results"""
     print(f"\n{'='*60}")
     print(f"Test: {test_name}")
     print(f"{'='*60}")
@@ -38,14 +37,11 @@ def print_extraction_result(result: CustomerSupportData, test_name: str):
     print(f"{'='*60}\n")
 
 def save_result_to_json(result: CustomerSupportData, filename: str):
-    """Save extraction result to JSON file"""
     with open(filename, 'w') as f:
         json.dump(json.loads(result.model_dump_json()), f, indent=2)
     print(f"Result saved to {filename}")
 
 def main():
-    """Main execution function"""
-    
     print("\n" + "="*60)
     print("LLM-Powered Structured Data Extraction Agent")
     print("="*60)
