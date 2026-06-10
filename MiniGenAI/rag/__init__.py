@@ -1,4 +1,4 @@
-"""RAG (Retrieval-Augmented Generation) package for MiniGenAI."""
+#RAG (Retrieval-Augmented Generation) package for MiniGenAI.
 
 from .pdf_loader import load_pdf
 from .embedding import get_embeddings
