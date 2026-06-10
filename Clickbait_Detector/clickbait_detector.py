@@ -1,8 +1,3 @@
-"""
-Complete Clickbait Detection System
-No external data files needed - everything is self-contained
-"""
-
 import pandas as pd
 import numpy as np
 import re
@@ -15,9 +10,6 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class ClickbaitDetector:
-    """
-    A complete clickbait detection system that can identify sensationalized headlines
-    """
     
     def __init__(self):
         self.vectorizer = TfidfVectorizer(
@@ -29,10 +21,6 @@ class ClickbaitDetector:
         self.is_trained = False
         
     def create_dataset(self):
-        """
-        Create a built-in dataset of real and clickbait headlines
-        No external files needed!
-        """
         dataset = {
             "headline": [
                 # Real News Headlines (0)
@@ -79,9 +67,6 @@ class ClickbaitDetector:
         return df
     
     def preprocess_text(self, text):
-        """
-        Clean and prepare text for analysis
-        """
         # Convert to lowercase
         text = text.lower()
         # Remove punctuation and numbers
@@ -92,9 +77,6 @@ class ClickbaitDetector:
         return text
     
     def extract_clickbait_features(self, headline):
-        """
-        Extract special features that indicate clickbait
-        """
         features = {}
         headline_lower = headline.lower()
         
@@ -118,9 +100,6 @@ class ClickbaitDetector:
         return features
     
     def prepare_features(self, df):
-        """
-        Combine TF-IDF features with custom clickbait features
-        """
         # Preprocess all headlines
         processed_headlines = df['headline'].apply(self.preprocess_text)
         
@@ -228,9 +207,6 @@ class ClickbaitDetector:
         return results
 
 def interactive_test():
-    """
-    Interactive testing function
-    """
     print("\n" + "="*60)
     print("🎯 CLICKBAIT DETECTOR - INTERACTIVE MODE")
     print("="*60)
@@ -294,9 +270,6 @@ def interactive_test():
         print("-"*40)
 
 def demo_mode():
-    """
-    Demonstration mode - shows example predictions
-    """
     print("\n" + "="*60)
     print("🎯 CLICKBAIT DETECTOR - DEMONSTRATION")
     print("="*60)
@@ -351,13 +324,10 @@ def demo_mode():
     print(f"📊 Success rate: {correct_predictions/len(results):.0%}")
 
 def main():
-    """
-    Main function to run the clickbait detector
-    """
     print("""
     ╔══════════════════════════════════════════════════════════╗
     ║                                                          ║
-    ║     🎯 CLICKBAIT DETECTION SYSTEM 🎯                     ║
+    ║     🎯 CLICKBAIT DETECTION SYSTEM 🎯                    ║
     ║                                                          ║
     ║     Detect sensationalized headlines using AI            ║
     ║                                                          ║
