@@ -1,4 +1,4 @@
-````markdown
+
 # 🚀 RAG Pipeline with FAISS and Groq Integration
 
 A powerful **Retrieval-Augmented Generation (RAG)** system that combines local **FAISS vector database** with **Groq API** for intelligent, cost-free question-answering across multiple domains.
