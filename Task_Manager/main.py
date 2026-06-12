@@ -9,13 +9,9 @@ from llm_config import validate_llm_connection
 
 def print_banner():
     """Print welcome banner."""
-    banner = """
-    ╔════════════════════════════════════════════════════════════════╗
-    ║                                                                ║
-    ║      🤖 LangChain ReAct Task Manager Agent                    ║
-    ║      Advanced Task Management with AI Reasoning                ║
-    ║                                                                ║
-    ╚════════════════════════════════════════════════════════════════╝
+    banner = """                                                  
+          🤖 LangChain ReAct Task Manager Agent                    
+          Advanced Task Management with AI Reasoning                
     """
     print(banner)
 
