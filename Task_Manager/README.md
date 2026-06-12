@@ -39,6 +39,10 @@ This project implements a task management system powered by an LLM agent that ca
 - **Output**: Filtered list of matching tasks
 - **Example**: "Search task homework"
 
+### 4. Delete Task Tool
+### 5.Prioritize the Task
+### 6.Update the Task
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -142,6 +146,10 @@ DailyTaskManager/
    - Add Task
    - View Tasks
    - Search Task
+   - Delete Task
+   - Update Task
+   - Prioritize Task
+   - Complete Task
 4. **Acting**: Execute the selected tool
 5. **Response**: Return meaningful feedback to the user
 6. **Loop**: Continue accepting new inputs
