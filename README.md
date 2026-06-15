@@ -15,7 +15,7 @@ This repository contains **15+ practical projects** across multiple domains:
 
 | Category | Count | Projects |
 |----------|-------|----------|
-| **🤖 AI/LLM** | 3 | LLM Data Extraction, AI Chatbot, MiniGenAI |
+| **🤖 AI/LLM** | 5 | LLM Data Extraction, AI Chatbot, MiniGenAI,Task Manager,AI Customer Assistant |
 | **🧠 Machine Learning** | 4 | Iris Classification, Wine Project, Classification Tasks |
 | **🔬 Neural Networks** | 3 | Perceptron, Two-Layer Perceptron, Binary Logistic Regression |
 | **📊 NLP** | 2 | NLTK Notebook, Clickbait Detector |
