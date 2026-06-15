@@ -1,0 +1,96 @@
+2026-06-15 15:08:53 | INFO     | __main__ | Starting server on 0.0.0.0:8000
+2026-06-15 15:09:47 | INFO     | api.app | Initialising RAG vector store on startup...
+2026-06-15 15:09:47 | INFO     | knowledge.rag_pipeline | Loading documents from: G:\ChimeraTechnolgies\DailyTask\cust\docs
+2026-06-15 15:09:47 | INFO     | knowledge.rag_pipeline | Loaded 3 documents
+2026-06-15 15:09:47 | INFO     | knowledge.rag_pipeline | Split into 11 chunks
+2026-06-15 15:09:47 | INFO     | knowledge.rag_pipeline | Loading embedding model: all-MiniLM-L6-v2
+2026-06-15 15:15:55 | INFO     | knowledge.rag_pipeline | Building FAISS vectorstore...
+2026-06-15 15:16:11 | INFO     | knowledge.rag_pipeline | FAISS index saved to: G:\ChimeraTechnolgies\DailyTask\cust\faiss_index
+2026-06-15 15:16:11 | INFO     | api.app | Vector store ready.
+2026-06-15 15:55:01 | INFO     | api.app | Initialising RAG vector store on startup...
+2026-06-15 15:55:01 | INFO     | knowledge.rag_pipeline | Loading documents from: G:\ChimeraTechnolgies\DailyTask\cust\docs
+2026-06-15 15:55:01 | INFO     | knowledge.rag_pipeline | Loaded 3 documents
+2026-06-15 15:55:01 | INFO     | knowledge.rag_pipeline | Split into 11 chunks
+2026-06-15 15:55:01 | INFO     | knowledge.rag_pipeline | Loading embedding model: all-MiniLM-L6-v2
+2026-06-15 15:56:24 | INFO     | knowledge.rag_pipeline | Building FAISS vectorstore...
+2026-06-15 15:56:29 | INFO     | knowledge.rag_pipeline | FAISS index saved to: G:\ChimeraTechnolgies\DailyTask\cust\faiss_index
+2026-06-15 15:56:29 | INFO     | api.app | Vector store ready.
+2026-06-15 15:57:29 | INFO     | api.app | [API] GET / — incoming
+2026-06-15 15:57:30 | INFO     | api.app | [API] GET / — 200
+2026-06-15 15:57:57 | INFO     | api.app | [API] GET / — incoming
+2026-06-15 15:57:58 | INFO     | api.app | [API] GET / — 200
+2026-06-15 15:57:58 | INFO     | api.app | [API] GET /favicon.ico — incoming
+2026-06-15 15:57:58 | INFO     | api.app | [API] GET /favicon.ico — 404
+2026-06-15 15:58:10 | INFO     | api.app | [API] GET /docs — incoming
+2026-06-15 15:58:10 | INFO     | api.app | [API] GET /docs — 200
+2026-06-15 15:58:11 | INFO     | api.app | [API] GET /openapi.json — incoming
+2026-06-15 15:58:13 | INFO     | api.app | [API] GET /openapi.json — 200
+2026-06-15 15:58:42 | INFO     | api.app | [API] POST /chat — incoming
+2026-06-15 15:58:42 | INFO     | api.app | [/chat] session=9d322e9f-9271-419d-a803-75cce24d8bee | message='Where is my order ORD123?'
+2026-06-15 15:58:42 | INFO     | chatbot.support_agent | [CHAT] session=9d322e9f-9271-419d-a803-75cce24d8bee | user='Where is my order ORD123?'
+2026-06-15 15:58:42 | INFO     | chatbot.support_agent | Created new memory for session: 9d322e9f-9271-419d-a803-75cce24d8bee
+2026-06-15 15:58:49 | INFO     | chatbot.support_agent | AgentExecutor built with Groq LLM
+2026-06-15 15:58:52 | INFO     | support_tools | [TOOL] check_order_status called with order_id=ORD123
+2026-06-15 15:58:52 | ERROR    | support_tools | orders.json not found
+2026-06-15 15:58:52 | INFO     | support_tools | [TOOL] create_support_ticket called: 'Order status for ORD123 is unavailable'
+2026-06-15 15:58:52 | ERROR    | support_tools | Failed to save ticket: [Errno 2] No such file or directory: 'G:\\ChimeraTechnolgies\\DailyTask\\data\\tickets.json'
+2026-06-15 15:58:53 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'order tracking information'
+2026-06-15 15:58:58 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'order tracking information'
+2026-06-15 15:58:58 | INFO     | support_tools | [TOOL] check_order_status called with order_id=ORD123
+2026-06-15 15:58:58 | ERROR    | support_tools | orders.json not found
+2026-06-15 15:58:59 | INFO     | chatbot.support_agent | [CHAT] tools_used=['check_order_status', 'create_support_ticket', 'search_knowledge_base', 'check_order_status'] | answer='I apologize for the inconvenience, but it seems that our order database is currently unavailable. I've tried to check th'
+2026-06-15 15:58:59 | INFO     | api.app | [API] POST /chat — 200
+2026-06-15 15:59:47 | INFO     | api.app | [API] POST /chat — incoming
+2026-06-15 15:59:48 | INFO     | api.app | [/chat] session=f49e8c87-043f-41cd-a4be-fd59f7136948 | message='what can you do for me now?'
+2026-06-15 15:59:48 | INFO     | chatbot.support_agent | [CHAT] session=f49e8c87-043f-41cd-a4be-fd59f7136948 | user='what can you do for me now?'
+2026-06-15 15:59:48 | INFO     | chatbot.support_agent | Created new memory for session: f49e8c87-043f-41cd-a4be-fd59f7136948
+2026-06-15 15:59:49 | INFO     | chatbot.support_agent | [CHAT] tools_used=[] | answer='I can assist you with various tasks. If you have questions about our company policies, such as returns, shipping, or pay'
+2026-06-15 15:59:49 | INFO     | api.app | [API] POST /chat — 200
+2026-06-15 16:00:37 | INFO     | api.app | [API] POST /chat — incoming
+2026-06-15 16:00:37 | INFO     | api.app | [/chat] session=0d9edc36-bbca-4c24-a67c-1241f9f6dfe2 | message='what are the payments policy?'
+2026-06-15 16:00:37 | INFO     | chatbot.support_agent | [CHAT] session=0d9edc36-bbca-4c24-a67c-1241f9f6dfe2 | user='what are the payments policy?'
+2026-06-15 16:00:37 | INFO     | chatbot.support_agent | Created new memory for session: 0d9edc36-bbca-4c24-a67c-1241f9f6dfe2
+2026-06-15 16:00:37 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'payments policy'
+2026-06-15 16:00:37 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'payments policy'
+2026-06-15 16:00:38 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'payment methods accepted'
+2026-06-15 16:00:38 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'payment methods accepted'
+2026-06-15 16:00:39 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'payments policy'
+2026-06-15 16:00:39 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'payments policy'
+2026-06-15 16:00:39 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'payment policy'
+2026-06-15 16:00:39 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'payment policy'
+2026-06-15 16:00:39 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'payment terms'
+2026-06-15 16:00:39 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'payment terms'
+2026-06-15 16:00:39 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'payment options'
+2026-06-15 16:00:39 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'payment options'
+2026-06-15 16:00:39 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'payment methods'
+2026-06-15 16:00:40 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'payment methods'
+2026-06-15 16:00:40 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'accepted payment methods'
+2026-06-15 16:00:40 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'accepted payment methods'
+2026-06-15 16:00:40 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'payment information'
+2026-06-15 16:00:40 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'payment information'
+2026-06-15 16:00:40 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'payment details'
+2026-06-15 16:00:40 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'payment details'
+2026-06-15 16:00:40 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'payment'
+2026-06-15 16:00:40 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'payment'
+2026-06-15 16:00:41 | INFO     | chatbot.support_agent | [CHAT] tools_used=['search_knowledge_base', 'search_knowledge_base', 'search_knowledge_base', 'search_knowledge_base', 'search_knowledge_base', 'search_knowledge_base', 'search_knowledge_base', 'search_knowledge_base', 'search_knowledge_base', 'search_knowledge_base', 'search_knowledge_base'] | answer='We accept credit cards, debit cards, UPI, net banking, and popular wallets like Paytm and PhonePe.'
+2026-06-15 16:00:41 | INFO     | api.app | [API] POST /chat — 200
+2026-06-15 16:01:17 | INFO     | api.app | [API] POST /chat — incoming
+2026-06-15 16:01:17 | INFO     | api.app | [/chat] session=fdd26014-d5ec-4d26-aded-5d9dd9522b1b | message='what are the shipment policy and is there any return option?'
+2026-06-15 16:01:17 | INFO     | chatbot.support_agent | [CHAT] session=fdd26014-d5ec-4d26-aded-5d9dd9522b1b | user='what are the shipment policy and is there any return option?'
+2026-06-15 16:01:17 | INFO     | chatbot.support_agent | Created new memory for session: fdd26014-d5ec-4d26-aded-5d9dd9522b1b
+2026-06-15 16:01:18 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'shipment policy and return options'
+2026-06-15 16:01:18 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'shipment policy and return options'
+2026-06-15 16:01:18 | INFO     | chatbot.support_agent | [TOOL] search_knowledge_base called: 'shipment policy'
+2026-06-15 16:01:18 | INFO     | knowledge.rag_pipeline | Retrieved 3 chunks for query: 'shipment policy'
+2026-06-15 16:01:19 | INFO     | chatbot.support_agent | [CHAT] tools_used=['search_knowledge_base', 'search_knowledge_base'] | answer='Our company's shipment policy includes tracking your order and international shipping. Currently, we only deliver within'
+2026-06-15 16:01:19 | INFO     | api.app | [API] POST /chat — 200
+2026-06-15 16:02:01 | INFO     | api.app | [API] GET /health — incoming
+2026-06-15 16:02:01 | INFO     | api.app | [API] GET /health — 200
+2026-06-15 16:02:30 | INFO     | api.app | [API] GET /health — incoming
+2026-06-15 16:02:30 | INFO     | api.app | [API] GET /health — 200
+2026-06-15 16:02:39 | INFO     | api.app | [API] GET /chat — incoming
+2026-06-15 16:02:39 | INFO     | api.app | [API] GET /chat — 405
+2026-06-15 16:02:54 | INFO     | api.app | [API] GET /docs — incoming
+2026-06-15 16:02:54 | INFO     | api.app | [API] GET /docs — 200
+2026-06-15 16:02:54 | INFO     | api.app | [API] GET /openapi.json — incoming
+2026-06-15 16:02:54 | INFO     | api.app | [API] GET /openapi.json — 200

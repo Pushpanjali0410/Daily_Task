@@ -1,0 +1,20 @@
+Q: How can I track my order?
+A: You can track your order using your order ID on our website or by asking our support assistant with your order ID (e.g. ORD123).
+
+Q: Can I cancel my order?
+A: Orders can be cancelled before they are shipped. Once an order has been shipped, cancellation is no longer possible. Please contact support immediately if you need to cancel.
+
+Q: What payment methods do you accept?
+A: We accept credit cards, debit cards, UPI, net banking, and popular wallets like Paytm and PhonePe.
+
+Q: How do I contact customer support?
+A: You can reach our customer support through this chat assistant, by email at support@ecommerce.com, or by phone at 1800-XXX-XXXX during business hours (9 AM to 6 PM IST).
+
+Q: Is my personal information secure?
+A: Yes, we use industry-standard encryption to protect your personal and payment information. We never share your data with third parties without your consent.
+
+Q: How do I change my delivery address?
+A: You can change your delivery address before the order is shipped by contacting customer support with your order ID and new address.
+
+Q: What happens if I receive a damaged product?
+A: If you receive a damaged product, please contact us within 48 hours of delivery with photos of the damage. We will arrange a replacement or refund immediately.
