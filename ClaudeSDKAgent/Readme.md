@@ -40,6 +40,7 @@ Any natural-language task works:
 ```bash
 python simple_agent.py "Find every function in this repo that doesn't validate its inputs"
 python simple_agent.py "Search the web for the latest version of FastAPI and check if we're using it"
+python simple_agent.py "Summarize about the csv file in the present directory"
 ```
 
 ## Configuration
