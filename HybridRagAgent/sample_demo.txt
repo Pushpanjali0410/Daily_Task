@@ -1,0 +1,33 @@
+Introduction to Hybrid RAG Systems
+
+Hybrid Retrieval-Augmented Generation (RAG) combines two complementary
+search strategies: lexical search (BM25) and semantic search (vector/FAISS).
+Lexical search excels at finding exact keyword matches. Semantic search
+finds conceptually similar content even without exact keyword overlap.
+
+Fusion Algorithms
+The Reciprocal Rank Fusion (RRF) algorithm combines ranked results by
+computing 1/(k + rank) for each document across both lists, where k=60
+is the smoothing constant. Documents appearing highly in both lists
+receive the greatest boost.
+
+Relative Score Fusion (RSF) normalizes raw BM25 and cosine similarity
+scores into a 0-1 range and computes a weighted average. A typical
+configuration uses 60% semantic weight and 40% lexical weight.
+
+Evaluation with DeepEval
+DeepEval provides LLM-as-judge metrics for RAG systems including:
+answer relevancy, faithfulness, contextual precision, contextual recall,
+hallucination detection, toxicity, bias, and completeness.
+A deployment gate of 7/10 metrics ensures production quality.
+
+FAISS Index
+Facebook AI Similarity Search (FAISS) enables efficient vector similarity
+search over millions of embeddings. The IndexFlatIP variant uses inner
+product (cosine similarity for normalized vectors) and is suitable for
+CPU deployments up to ~100k chunks.
+
+Ollama Integration
+Ollama provides local LLM inference. The system uses nomic-embed-text
+for generating embeddings and llama3.2 for answer generation. Both
+models run entirely on-device, ensuring data privacy.
